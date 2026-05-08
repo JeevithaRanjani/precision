@@ -186,7 +186,7 @@ onClick={() => {
           bg-black text-white 
           dark:bg-white dark:text-black
         ">
-          <span className="relative z-10">Get a Quote ↗</span>
+          <span className="relative z-10">Career ↗</span>
 
           <span className="
             absolute top-0 left-[-100%] w-full h-full
