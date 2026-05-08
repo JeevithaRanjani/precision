@@ -169,7 +169,7 @@ export default function NewsHero() {
         </p>
 
         <h2 className={`${spaceGrotesk.className} text-[45px] font-bold text-black`}>
-          All the <span className="text-blue-500">recent moves.</span>
+          All the <span className="text-shine text-blue-500">Recent moves.</span>
         </h2>
       </div>
 

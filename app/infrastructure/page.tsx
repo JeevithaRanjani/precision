@@ -122,7 +122,7 @@ function InfrastructurePageContent() {
       </section>
 
       {/* MAIN */}
-      <section className="bg-black text-white px-6 md:px-16 py-20">
+      <section className="bg-white text-black px-6 md:px-16 py-20">
         <div className="max-w-7xl mx-auto grid md:grid-cols-4 gap-6">
 
           {/* SIDEBAR */}
@@ -140,7 +140,7 @@ function InfrastructurePageContent() {
                     ${
                       i === activeTab
                         ? "border-blue-500 bg-blue-500/10"
-                        : "border-white/10 hover:border-blue-500"
+                        : "border-black/10 hover:border-blue-500"
                     }`}
                 >
                   <span className="text-blue-500">{tab.icon}</span>
@@ -163,7 +163,7 @@ function InfrastructurePageContent() {
             {/* STATS */}
             <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
               {current.stats.map((s, i) => (
-                <div key={i} className="border border-white/10 p-4 text-center">
+                <div key={i} className="border border-black/10 p-4 text-center">
                   <h3 className="text-blue-500">{s.value}</h3>
                   <p className="text-gray-400 text-sm">{s.label}</p>
                 </div>
@@ -171,11 +171,11 @@ function InfrastructurePageContent() {
             </div>
 
             {/* TABLE */}
-            <div className="mt-6 border border-white/10">
+            <div className="mt-6 border border-black/10">
               <table className="w-full text-sm">
                 <tbody>
                   {current.table.map((row, i) => (
-                    <tr key={i} className="border-t border-white/10">
+                    <tr key={i} className="border-t border-black/10">
                       <td className="p-4">{row[0]}</td>
                       <td className="p-4 text-gray-400">{row[1]}</td>
                       <td className="p-4 text-right text-blue-500">{row[2]}</td>

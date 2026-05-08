@@ -188,7 +188,7 @@ const fadeItem = {
 
                     {/* ABOUT SECTION */}
 
-      <div className="w-full h-screen bg-black text-white relative">
+      <div className="w-full h-[700px] bg-black text-white relative">
 
 
         {slides.map((slide, index) => (
@@ -272,7 +272,7 @@ const fadeItem = {
 
           <h2 className={`${spaceGrotesk.className} text-4xl font-bold leading-tight`}>
             WE ARE COMMITTED TO <br />
-            <span className="text-blue-500">DELIVERING EXCELLENCE.</span>
+            <span className="text-shine text-blue-500">DELIVERING EXCELLENCE.</span>
           </h2>
 
           <p className={`${spaceGrotesk.className} mt-6 text-black text-lg max-w-xl`}>
@@ -417,7 +417,7 @@ const fadeItem = {
         </p>
 
         <h1 className="text-4xl md:text-6xl font-bold leading-tight max-w-4xl mx-auto">
-          The <span className="text-blue-500">energy of a start-up</span> <br />
+          The <span className="text-shine text-blue-500">energy of a start-up</span> <br />
           combined with many years of experience.
         </h1>
       </div>

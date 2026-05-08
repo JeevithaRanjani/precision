@@ -913,7 +913,7 @@ useEffect(() => {
           className="grid md:grid-cols-2 gap-10 mb-16 relative z-10"
         >
           <h1 className={`${spaceGrotesk.className} text-5xl md:text-6xl font-bold text-black`}>
-            Committed to <span className="text-blue-500">precision.</span>
+            Committed to <span className="text-shine text-blue-500">precision.</span>
           </h1>
 {/* 
           <p className={`${spaceGrotesk.className} text-gray-600 text-lg leading-relaxed`}>
