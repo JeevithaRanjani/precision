@@ -370,6 +370,142 @@ export default function ContactHero() {
           </div>
         </div>
       </section>
+
+    <section className="w-full bg-black py-20 px-4 md:px-10 overflow-hidden">
+
+        {/* TOP */}
+        <div className="max-w-7xl mx-auto flex flex-col md:flex-row md:items-center md:justify-between gap-8 mb-10">
+
+          {/* LEFT */}
+          <div>
+
+            {/* LABEL */}
+            <p className="text-blue-500 text-[11px] tracking-[6px] uppercase font-mono mb-5 flex items-center gap-3">
+              <span className="w-10 h-[1px] bg-blue-500"></span>
+              FIND US
+            </p>
+
+            {/* HEADING */}
+            <h2
+              className={`${spaceGrotesk.className}
+              text-white
+              text-[43px]
+              font-bold
+              leading-[0.95]
+            `}
+            >
+              Coimbatore,{" "}
+              <span className="text-blue-500 text-shine">
+                Tamil Nadu.
+              </span>
+            </h2>
+          </div>
+
+          {/* BUTTON */}
+          <button
+            className="
+            relative overflow-hidden group
+            border border-blue-500/40
+            px-8 py-4
+            text-blue-500
+            text-[12px]
+            tracking-[4px]
+            uppercase
+            hover:text-white
+            transition-all duration-500
+          "
+          >
+            <span className="relative z-10 flex items-center gap-3">
+              Open In Google Maps ↗
+            </span>
+
+            {/* HOVER BG */}
+            <span
+              className="
+              absolute inset-0
+              bg-blue-600
+              scale-x-0
+              group-hover:scale-x-100
+              origin-left
+              transition-transform duration-500
+            "
+            ></span>
+
+            {/* SHINE */}
+            <span
+              className="
+              absolute top-0 left-[-120%]
+              w-full h-full
+              bg-gradient-to-r from-transparent via-white/20 to-transparent
+              skew-x-12
+              group-hover:left-[120%]
+              transition-all duration-700
+            "
+            ></span>
+          </button>
+        </div>
+
+        {/* MAP WRAPPER */}
+        <div className="max-w-7xl mx-auto relative overflow-hidden border border-white/10">
+
+          {/* LIVE TAG */}
+          <div
+            className="
+            absolute top-5 left-5 z-20
+            bg-[#2a2a2d]
+            border border-[#4a4a4d]
+            px-5 py-4
+            flex items-center gap-4
+          "
+          >
+            {/* BLUE DOT */}
+            <span className="w-3 h-3 rounded-full bg-blue-500 animate-pulse"></span>
+
+            <p className="text-white text-[11px] tracking-[4px] uppercase font-mono">
+              Plant • Live
+            </p>
+          </div>
+
+          {/* MAP */}
+          <div className="relative w-full h-[450px] grayscale">
+
+            <iframe
+              src="https://www.google.com/maps?q=Kurichi%20Industrial%20Estate%20Coimbatore&output=embed"
+              width="100%"
+              height="100%"
+              loading="lazy"
+              className="absolute inset-0 border-0"
+            ></iframe>
+
+            {/* DARK FADE */}
+            <div className="absolute inset-0 bg-black/10 pointer-events-none"></div>
+
+            {/* GRID OVERLAY */}
+            <div
+              className="
+              absolute inset-0 opacity-[0.04]
+              [background-image:linear-gradient(#2563eb_1px,transparent_1px),linear-gradient(90deg,#2563eb_1px,transparent_1px)]
+              [background-size:60px_60px]
+              pointer-events-none
+            "
+            ></div>
+
+            {/* LIGHT SWEEP */}
+            <div className="absolute inset-0 overflow-hidden pointer-events-none">
+              <div
+                className="
+                absolute top-0 left-[-100%]
+                w-[40%] h-full
+                bg-gradient-to-r from-transparent via-white/10 to-transparent
+                skew-x-12
+                animate-[shine_8s_linear_infinite]
+              "
+              ></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </>
   );
 }

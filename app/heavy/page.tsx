@@ -72,7 +72,7 @@ export default function ProductHero() {
 
           <h2 className="text-5xl font-bold">
             Twelve flagship <br />
-            <span className="text-blue-500">components.</span>
+            <span className="text-blue-500">Components.</span>
           </h2>
         </div>
 

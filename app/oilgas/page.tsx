@@ -77,7 +77,7 @@ export default function ProductHero() {
           </p>
 
           <h2 className={`${spaceGrotesk.className} text-5xl font-bold`}>
-            Twelve flagship <span className="text-shine text-blue-500">components.</span>
+            Twelve flagship <span className="text-shine text-blue-500">Components.</span>
           </h2>
         </div>
 

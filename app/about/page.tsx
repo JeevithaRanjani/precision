@@ -24,8 +24,8 @@ export default function About() {
     {
       id: 1,
       image: "/assests/about/about-hero.jpg",
-      title1: "Heavy engineering,",
-      title2: "measured in microns.",
+      title1: "Heavy Engineering,",
+      title2: "Measured In Microns.",
       desc: "Delivering high-quality machining solutions with global standards.",
     },
   ];
@@ -357,7 +357,7 @@ const fadeItem = {
 
           <h1 className={`${spaceGrotesk.className} text-5xl md:text-7xl font-bold leading-tight`}>
             A comprehensive <br />
-            precision <br />
+            Precision <br />
             <span className="text-shine text-blue-500">solution.</span>
           </h1>
         </div>
@@ -390,7 +390,7 @@ const fadeItem = {
           </p>
 
           <h1 className={`${spaceGrotesk.className} text-5xl md:text-7xl font-bold text-black`}>
-            Our <span className="text-shine text-blue-500">management.</span>
+            Our <span className="text-shine text-blue-500">Management.</span>
           </h1>
 
           <p className={`${spaceGrotesk.className} mt-6 text-gray-600 text-lg leading-relaxed`}>
@@ -452,7 +452,7 @@ const fadeItem = {
           className="grid md:grid-cols-2 gap-10 mb-16 relative z-10"
         >
           <h1 className={`${spaceGrotesk.className} text-5xl md:text-6xl font-bold text-black`}>
-            Committed to <span className="text-shine text-blue-500">precision.</span>
+            Committed to <span className="text-shine text-blue-500">Precision.</span>
           </h1>
 
           {/* <p className={`${spaceGrotesk.className} text-gray-600 text-lg leading-relaxed`}>

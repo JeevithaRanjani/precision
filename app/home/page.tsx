@@ -631,7 +631,7 @@ useEffect(() => {
             </p>
 
             <h2 className={`${spaceGrotesk.className} text-5xl font-bold`}>
-              Industries we <span className="text-shine text-blue-500">power.</span>
+              Industries We <span className="text-shine text-blue-500">Power.</span>
             </h2>
           </div>
         </div>
@@ -811,7 +811,7 @@ useEffect(() => {
         </p>
 
         <h2 className={`${spaceGrotesk.className} text-5xl font-bold mb-10`}>
-          Consistency in <span className="text-shine text-blue-500">quality.</span>
+          Consistency In <span className="text-shine text-blue-500">Quality.</span>
         </h2>
 
         {/* TABS */}
@@ -913,7 +913,7 @@ useEffect(() => {
           className="grid md:grid-cols-2 gap-10 mb-16 relative z-10"
         >
           <h1 className={`${spaceGrotesk.className} text-5xl md:text-6xl font-bold text-black`}>
-            Committed to <span className="text-shine text-blue-500">precision.</span>
+            Committed to <span className="text-shine text-blue-500">Precision.</span>
           </h1>
 {/* 
           <p className={`${spaceGrotesk.className} text-gray-600 text-lg leading-relaxed`}>
@@ -998,7 +998,7 @@ useEffect(() => {
 
       <div className="flex flex-col md:flex-row justify-between items-start mb-12 gap-6">
         <h1 className={`${spaceGrotesk.className} text-4xl md:text-6xl font-bold leading-tight`}>
-          Inspected at every <span className="text-shine text-blue-500">micron.</span>
+          Inspected at every <span className="text-shine text-blue-500">Micron.</span>
         </h1>
 
         {/* BADGES */}
