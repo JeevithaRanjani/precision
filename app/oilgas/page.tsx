@@ -48,7 +48,7 @@ export default function ProductHero() {
             CATALOG • 12 COMPONENTS
           </p>
 
-          <h1 className={`${spaceGrotesk.className} text-[54px] md:text-[80px] font-bold leading-[1.05]`}>
+          <h1 className={`${spaceGrotesk.className} text-[54px] md:text-[80px] text-white font-bold leading-[1.05]`}>
             Products & <span className=" text-shine text-blue-500">Services</span>
           </h1>
 

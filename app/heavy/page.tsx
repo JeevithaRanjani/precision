@@ -42,7 +42,7 @@ export default function ProductHero() {
             CATALOG • 12 COMPONENTS
           </p>
 
-          <h1 className="text-[64px] md:text-[80px] font-bold leading-[1.05]">
+          <h1 className="text-[64px] text-white md:text-[80px] font-bold leading-[1.05]">
             Products & <span className="text-blue-500">Services</span>
           </h1>
 

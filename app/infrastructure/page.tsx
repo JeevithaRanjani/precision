@@ -49,7 +49,7 @@ function InfrastructurePageContent() {
     {
       name: "CMM & Instruments",
       icon: <FaRulerCombined />,
-      image: "/assests/about/infra-capabilities.jpg",
+      image: "/assests/home/hero-machine (2).jpg",
       title: "Precision Measurement",
       desc: "Advanced metrology systems ensuring accuracy.",
       stats: [{ label: "Accuracy", value: "±2 μm" }],
@@ -67,7 +67,7 @@ function InfrastructurePageContent() {
     {
       name: "Capabilities",
       icon: <FaRocket />,
-      image: "/assests/home/infra-cmm.jpg",
+      image: "/assests/home/hero-slide-2.jpg",
       title: "Engineering Capabilities",
       desc: "High-end machining with multi-axis systems.",
       stats: [{ label: "Axis", value: "5 Axis" }],
@@ -110,7 +110,7 @@ function InfrastructurePageContent() {
             CATALOG • 12 COMPONENTS
           </p>
 
-          <h1 className={`${spaceGrotesk.className} text-[54px] md:text-[80px] font-bold leading-[1.05]`}>
+          <h1 className={`${spaceGrotesk.className} text-[54px] md:text-[80px] text-white font-bold leading-[1.05]`}>
             Products & <span className=" text-shine text-blue-500">Services</span>
           </h1>
 
@@ -155,8 +155,8 @@ function InfrastructurePageContent() {
             <div className="relative h-[400px] mb-6">
               <Image src={current.image} alt="" fill className="object-cover" />
               <div className="absolute bottom-6 left-6">
-                <h3 className="text-blue-500 font-bold">{current.title}</h3>
-                <p>{current.desc}</p>
+                <h3 className="text-[18px] mb-4 font-mono text-blue-500 font-bold">{current.title}</h3>
+                <p className={`${spaceGrotesk.className} text-[18px] text-white leading-[1.05]`}>{current.desc}</p>
               </div>
             </div>
 

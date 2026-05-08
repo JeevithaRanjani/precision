@@ -26,11 +26,11 @@ const infrastructureList = [
 ];
 
 const productRoutes: Record<string, string> = {
-  "OIL & GAS": "/oilgas",
-  "LOCOMOTIVE INDUSTRY": "/locomotive",
-  "HEAVY ENGINEERING INDUSTRY": "/heavy",
-  "WIND SECTOR INDUSTRY": "/wind",
-  "AEROSPACE INDUSTRY": "/aerospace",
+  "Oil & Gas": "/oilgas",
+  "Locomotive Industry": "/locomotive",
+  "Heavy Engineering Industry": "/heavy",
+  "Wind Sector Industry": "/wind",
+  "Aerospace Industry": "/aerospace",
 };
 
   return (
@@ -70,7 +70,7 @@ const productRoutes: Record<string, string> = {
           key={i}
           className="relative"
           onMouseEnter={() => setOpenDropdown(item.name)}
-          onMouseLeave={() => setOpenDropdown(null)}
+        
         >
           <div
             className="
@@ -108,7 +108,7 @@ const productRoutes: Record<string, string> = {
               bg-white/80 dark:bg-black/80
               border border-black/10 dark:border-white/20
               shadow-lg overflow-hidden
-            ">
+            "onMouseLeave={() => setOpenDropdown(null)}>
               {dropdownData.map((sub, idx) => (
              <div
   key={idx}
