@@ -38,10 +38,10 @@ const productRoutes: Record<string, string> = {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl">
       
       <div className="
-        flex items-center justify-between px-6 py-4
+        flex items-center justify-between px-5 py-1
         rounded-[25px]
         backdrop-blur-xl
-        bg-white dark:bg-black/40
+        bg-white dark:bg-white/40
         border border-black/10 dark:border-white/20
         shadow-[0_8px_30px_rgba(0,0,0,0.15)]
       ">
@@ -51,7 +51,7 @@ const productRoutes: Record<string, string> = {
   src="/assests/home/high_logo4.png" // place your logo image inside the public folder
   alt="High Precision Logo"
   onClick={() => router.push("/")}
-  className="h-18 w-65 cursor-pointer object-contain"
+  className="h-20 w-65 cursor-pointer object-contain"
 />
 
         {/* Menu */}
@@ -188,7 +188,7 @@ onClick={() => {
           rounded-full text-sm font-medium whitespace-nowrap
           relative overflow-hidden group
           bg-black text-white 
-          dark:bg-white dark:text-black
+          dark:bg-black dark:text-white
         ">
           <span className="relative z-10">Build Your Career ↗</span>
 
