@@ -41,7 +41,7 @@ const productRoutes: Record<string, string> = {
         flex items-center justify-between px-5 py-1
         rounded-[25px]
         backdrop-blur-xl
-        bg-white dark:bg-white/40
+        bg-white dark:bg-white
         border border-black/10 dark:border-white/20
         shadow-[0_8px_30px_rgba(0,0,0,0.15)]
       ">
