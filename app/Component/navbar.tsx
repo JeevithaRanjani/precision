@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-img-element */
 "use client";
 
 import React, { useState } from "react";
@@ -37,24 +38,24 @@ const productRoutes: Record<string, string> = {
     <div className="fixed top-6 left-1/2 -translate-x-1/2 z-50 w-[95%] max-w-7xl">
       
       <div className="
-        flex items-center justify-between px-10 py-4
+        flex items-center justify-between px-6 py-4
         rounded-[25px]
         backdrop-blur-xl
-        bg-white/70 dark:bg-black/40
+        bg-white dark:bg-black/40
         border border-black/10 dark:border-white/20
         shadow-[0_8px_30px_rgba(0,0,0,0.15)]
       ">
         
-        {/* Logo */}
-        <h1 
-          onClick={() => router.push("/")}
-          className="font-semibold tracking-wide text-lg whitespace-nowrap 
-          text-black dark:text-white cursor-pointer">
-          HIGH PRECISION
-        </h1>
+{/* Logo */}
+<img
+  src="/assests/home/high_logo4.png" // place your logo image inside the public folder
+  alt="High Precision Logo"
+  onClick={() => router.push("/")}
+  className="h-18 w-65 cursor-pointer object-contain"
+/>
 
         {/* Menu */}
-<ul className="hidden md:flex items-center gap-8">
+<ul className="hidden md:flex items-center gap-3">
   {menu.map((item, i) => {
 
     const isInfrastructure = item.name === "Infrastructure";
@@ -74,29 +75,32 @@ const productRoutes: Record<string, string> = {
         >
           <div
             className="
-              relative px-4 py-2 text-sm cursor-pointer 
-              rounded-full group overflow-hidden whitespace-nowrap
-              text-black dark:text-white
+            relative px-5 py-3 text-sm cursor-pointer
+    rounded-full text-right group whitespace-nowrap
+    text-black dark:text-white
+    overflow-hidden
             "
           >
-            <span className="relative z-10 flex items-center gap-1">
+            <span className="relative z-8 flex items-center">
               {item.name} ▾
             </span>
 
             {/* Hover BG */}
             <span className="
-              absolute inset-0 rounded-full opacity-0 group-hover:opacity-100
-              bg-black/10 dark:bg-white/10
-              transition duration-400
+            absolute -inset-1
+      rounded-full
+      opacity-0 group-hover:opacity-100
+      bg-black/20 dark:bg-white/20
+      transition-all duration-700
             "></span>
 
             {/* Shine */}
             <span className="
-              absolute inset-0 
-              bg-gradient-to-r from-transparent via-white/40 to-transparent
-              dark:via-white/20
-              translate-x-[-100%] group-hover:translate-x-[100%]
-              transition duration-700
+                 absolute inset-0
+      bg-gradient-to-r from-transparent via-white/40 to-transparent
+      dark:via-white/20
+      translate-x-[-200%] group-hover:translate-x-[200%]
+      transition duration-700
             "></span>
           </div>
 

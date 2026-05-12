@@ -46,15 +46,15 @@ export default function Footer() {
             <div>
 
               {/* LOGO */}
-              <div className="w-[220px] h-[55px] bg-[#ececec] relative mb-10 overflow-hidden">
+              <div className="w-[240px] h-[65px] bg-[#ececec] relative mb-10 overflow-hidden">
 
                 {/* Replace with your logo */}
-                {/* <Image
-                  src="/assets/logo.png"
+                <Image
+                  src="/assests/home/high_logo4.png"
                   alt="logo"
                   fill
                   className="object-contain"
-                /> */}
+                />
 
               </div>
 
