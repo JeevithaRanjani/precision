@@ -77,7 +77,7 @@ const productRoutes: Record<string, string> = {
             className="
             relative px-5 py-3 text-sm cursor-pointer
     rounded-full text-right group whitespace-nowrap
-    text-black dark:text-white
+    text-black dark:text-black
     overflow-hidden
             "
           >
