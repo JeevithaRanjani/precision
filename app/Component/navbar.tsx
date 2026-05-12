@@ -42,7 +42,7 @@ const productRoutes: Record<string, string> = {
         rounded-[25px]
         backdrop-blur-xl
         bg-white dark:bg-white
-        border border-black/10 dark:border-white/20
+        border border-black/10 dark:border-black/10
         shadow-[0_8px_30px_rgba(0,0,0,0.15)]
       ">
         
@@ -90,7 +90,8 @@ const productRoutes: Record<string, string> = {
             absolute -inset-1
       rounded-full
       opacity-0 group-hover:opacity-100
-      bg-black/20 dark:bg-white/20
+      bg-black/10 dark:bg-black/10
+backdrop-blur-md
       transition-all duration-700
             "></span>
 
@@ -98,7 +99,7 @@ const productRoutes: Record<string, string> = {
             <span className="
                  absolute inset-0
       bg-gradient-to-r from-transparent via-white/40 to-transparent
-      dark:via-white/20
+      dark:via-white/40
       translate-x-[-200%] group-hover:translate-x-[200%]
       transition duration-700
             "></span>
@@ -109,8 +110,10 @@ const productRoutes: Record<string, string> = {
             <div className="
               absolute top-full left-0 mt-2 w-60
               rounded-xl backdrop-blur-xl
-              bg-white/80 dark:bg-black/80
-              border border-black/10 dark:border-white/20
+              bg-white/90 dark:bg-white/90
+              text-black dark:text-black
+              backdrop-blur-2xl
+              border border-black/10 dark:border-black/10
               shadow-lg overflow-hidden
             "onMouseLeave={() => setOpenDropdown(null)}>
               {dropdownData.map((sub, idx) => (
@@ -136,7 +139,7 @@ onClick={() => {
 }}
   className="
     px-4 py-3 text-sm cursor-pointer
-    hover:bg-black/10 dark:hover:bg-white/10
+    hover:bg-black/10 dark:hover:bg-black/10
     transition
   "
 >
@@ -157,14 +160,14 @@ onClick={() => {
         className="
           relative px-4 py-2 text-sm cursor-pointer 
           rounded-full group overflow-hidden whitespace-nowrap
-          text-black dark:text-white
-        "
+          text-black dark:text-black
+        "   
       >
         <span className="relative z-10">{item.name}</span>
 
         <span className="
           absolute inset-0 rounded-full opacity-0 group-hover:opacity-100
-          bg-black/10 dark:bg-white/10
+          bg-black/10 dark:bg-black/10
           transition duration-400
         "></span>
 
@@ -194,7 +197,7 @@ onClick={() => {
 
           <span className="
             absolute top-0 left-[-100%] w-full h-full
-            bg-white/40 dark:bg-black/20
+            bg-white/40 dark:bg-white/40
             skew-x-12 group-hover:left-[120%]
             transition-all duration-700
           "></span>
