@@ -923,70 +923,69 @@ useEffect(() => {
         </motion.div>
 
         {/* GRID */}
+          <motion.div
+    variants={container}
+    initial="hidden"
+    whileInView="show"
+    viewport={{ once: true }}
+    className="relative z-10 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6"
+  >
+    {features.map((f, i) => {
+      const Icon = f.icon;
+
+      return (
         <motion.div
-          variants={container}
-          initial="hidden"
-          whileInView="show"
-          className="grid md:grid-cols-3 border border-gray-200 relative z-10"
+          key={f.id}
+          variants={item}
+          whileHover={{
+            y: -8,
+          }}
+          transition={{ duration: 0.3 }}
+          className="group relative rounded-3xl border border-gray-200/70 bg-white/80 backdrop-blur-xl p-8 overflow-hidden shadow-[0_10px_40px_rgba(0,0,0,0.04)] hover:shadow-[0_20px_60px_rgba(59,130,246,0.15)] transition-all duration-500"
         >
-          {features.map((f, i) => {
-            const Icon = f.icon;
+          {/* HOVER GRADIENT */}
+          <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
+            <div className="absolute inset-0 bg-linear-to-br from-blue-500/10 via-transparent to-cyan-400/10" />
+          </div>
 
-            return (
-              <motion.div
-                key={f.id}
-                variants={item}
-                initial="hidden"
-                animate="show"
-                whileHover={{
-                  y: -10,
-                  scale: 1.02,
-                }}
-                className="relative p-10 border border-gray-200 bg-white/70 backdrop-blur-xl group transition duration-300 overflow-hidden"
-              >
-                {/* Animated Gradient Hover */}
-                <div className="absolute inset-0 opacity-0 group-hover:opacity-100 transition duration-500">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/40 via-transparent to-blue-500/40" />
-                </div>
+          {/* TOP */}
+          <div className="relative z-10 flex items-start justify-between mb-10">
+            {/* ICON */}
+            <div className="w-14 h-14 rounded-2xl bg-blue-50 border border-blue-100 flex items-center justify-center group-hover:scale-110 transition duration-300">
+              <Icon className="w-7 h-7 text-blue-500" />
+            </div>
 
-                {/* BIG NUMBER */}
-                <motion.span
-                  initial={{ opacity: 0 }}
-                  whileInView={{ opacity: 1 }}
-                  transition={{ delay: i * 0.2 }}
-                  className="absolute top-4 right-6 text-7xl font-bold text-grey-500 group-hover:scale-110 transition"
-                >
-                  {f.id}
-                </motion.span>
+            {/* NUMBER */}
+            <span className="text-5xl font-bold text-gray-100 group-hover:text-blue-100 transition duration-500">
+              {f.id}
+            </span>
+          </div>
 
-                {/* ICON */}
-                <div className="mb-6 relative z-10">
-                  <Icon className="w-9 h-9 text-gray-700 group-hover:text-blue-500 transition" />
-                </div>
+          {/* CONTENT */}
+          <div className="relative z-10">
+            <h3
+              className={`${spaceGrotesk.className} text-xl font-semibold text-black mb-4`}
+            >
+              {f.title}
+            </h3>
 
-                {/* TITLE */}
-                {/* <h3 className="text-lg font-semibold mb-3 relative z-10">
-                  {f.title}
-                </h3> */}
+            <p className="text-gray-600 leading-relaxed text-sm">
+              {f.desc}
+            </p>
+          </div>
 
-                {/* DESC */}
-                <p className={`${spaceGrotesk.className} text-black mt-15 text-sm leading-relaxed relative z-10`}>
-                  {f.desc}
-                </p>
-
-                {/* Bottom Accent Line */}
-                {["01", "03", "05", "07", "09"].includes(f.id) && (
-                  <motion.div
-                    initial={{ width: 0 }}
-                    whileInView={{ width: "100%" }}
-                    transition={{ duration: 1 }}
-                    className="absolute bottom-0 left-0 h-[3px] bg-blue-500"
-                  />
-                )}
-              </motion.div>
-            );
-          })}
+          {/* BOTTOM LINE */}
+          <motion.div
+            initial={{ width: 0 }}
+            whileInView={{ width: "100%" }}
+            transition={{ duration: 1, delay: i * 0.1 }}
+            className="absolute bottom-0 left-0 h-1 bg-linear-to-r from-blue-500 to-cyan-400 rounded-full"
+          />
         </motion.div>
+      );
+    })}
+  </motion.div>
+
       </section>
 
  <section className="bg-black text-white px-6 md:px-20 py-20">
